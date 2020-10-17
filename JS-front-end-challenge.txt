@@ -1,0 +1,2 @@
+Code: https://github.com/gdixon/substrate-front-end-template/
+Live page: https://gdixon.github.io/substrate-front-end-template/
