@@ -2,6 +2,10 @@
 
 - [[ECOSYSTEM CHALLENGE] Using Remix And MetaMask On Moonbeam](https://gitcoin.co/issue/PureStake/gitcoin-hello-world-by-moonbeam/3/100023962) 
   - https://github.com/gdixon/polkadotHackathon/blob/main/deploy-to-moonbeam
+  
+- [[ECOSYSTEM CHALLENGE] Deploy On Moonbase Alpha Using Truffle](https://gitcoin.co/issue/PureStake/gitcoin-hello-world-by-moonbeam/1/100023953) 
+  - https://github.com/gdixon/polkadotHackathon/blob/main/deploy-to-moonbeam-with-truffle
+  
 - [[BEGINNER CHALLENGE] Launch A Local Substrate Development Chain](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/17/100023943) 
   - https://github.com/gdixon/polkadotHackathon/blob/main/Substrate%20dev%20chain.png
 - [[BEGINNER CHALLENGE] Run A Private Substrate Network](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/16/100023942) 
