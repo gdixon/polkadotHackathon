@@ -18,9 +18,11 @@
   - https://github.com/gdixon/polkadotHackathon/blob/main/JS-back-end-challenge.txt
 
 - [[BEGINNER CHALLENGE] Run A Kusama Or Polkadot Node And Add It To Telemetry](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/12/100023938) 
-  - https://github.com/gdixon/polkadotHackathon/blob/main/run-polkadot-node
-  - https://github.com/gdixon/polkadotHackathon/blob/main/run-polkadot-node-1.png
-  - https://github.com/gdixon/polkadotHackathon/blob/main/run-polkadot-node-2.png --- waiting for 24hrs to have passed before submitting to gitcoin
+  - https://github.com/gdixon/polkadotHackathon/blob/main/run-polkadot-node-24hr/node-name
+  - https://github.com/gdixon/polkadotHackathon/blob/main/run-polkadot-node-24hr/run-polkadot-node-1.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/run-polkadot-node-24hr/run-polkadot-node-2.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/run-polkadot-node-24hr/run-polkadot-node-3.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/run-polkadot-node-24hr/run-polkadot-node-4.png
 
 - [[BEGINNER CHALLENGE] Deploying Solidity Contract On Plasm Network V1](https://gitcoin.co/issue/staketechnologies/hello-world-by-polkadot/6/100023960) 
   -  https://github.com/gdixon/polkadotHackathon/blob/main/deploy-to-plasm
