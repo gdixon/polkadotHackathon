@@ -26,3 +26,6 @@
 
 - [[BEGINNER CHALLENGE] Deploying Solidity Contract On Plasm Network V1](https://gitcoin.co/issue/staketechnologies/hello-world-by-polkadot/6/100023960) 
   -  https://github.com/gdixon/polkadotHackathon/blob/main/deploy-to-plasm
+
+- [[INTERMEDIATE CHALLENGE] Deploying An Auction Solidity Contract On Plasm Network](https://gitcoin.co/issue/staketechnologies/hello-world-by-polkadot/5/100023959)
+  - https://github.com/gdixon/polkadotHackathon/blob/main/deploy-auction-to-plasm
