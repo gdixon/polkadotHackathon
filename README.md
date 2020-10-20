@@ -29,3 +29,6 @@
 
 - [[INTERMEDIATE CHALLENGE] Deploying An Auction Solidity Contract On Plasm Network](https://gitcoin.co/issue/staketechnologies/hello-world-by-polkadot/5/100023959)
   - https://github.com/gdixon/polkadotHackathon/blob/main/deploy-auction-to-plasm
+
+- [[BEGINNER CHALLENGE] Set An Identity On Kusama Or Polkadot's Development Version](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/11/100023937)
+  - https://github.com/gdixon/polkadotHackathon/blob/main/identity-on-substrate.png
