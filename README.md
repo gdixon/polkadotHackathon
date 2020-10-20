@@ -36,3 +36,6 @@
 - [[INTERMEDIATE CHALLENGE] FRAME Identity: Set An Identity On A Local --Dev Chain](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/10/100023936)
   - https://github.com/gdixon/polkadotHackathon/blob/main/identity-on-node-template-dev-1.png
   - https://github.com/gdixon/polkadotHackathon/blob/main/identity-on-node-template-dev-2.png
+
+- [[INTERMEDIATE CHALLENGE] Forkless Upgrades](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/6/100023932)
+  - https://github.com/gdixon/polkadotHackathon/blob/main/forkless-upgrade-on-node-template.png
