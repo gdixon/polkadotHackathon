@@ -44,3 +44,7 @@
   - https://github.com/gdixon/polkadotHackathon/blob/main/orml-substrate-build
   - https://github.com/gdixon/polkadotHackathon/blob/main/custom-token-issuance.png
   - https://github.com/gdixon/polkadotHackathon/blob/main/alice-custom-token-balance.png
+
+
+- [[ECOSYSTEM CHALLENGE] Enable NFT Support](https://gitcoin.co/issue/AcalaNetwork/polakdot-hello-world-acala/1/100023951)
+  - https://github.com/gdixon/polkadotHackathon/blob/main/orml-nft-substrate-build
