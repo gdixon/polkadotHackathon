@@ -32,3 +32,7 @@
 
 - [[BEGINNER CHALLENGE] Set An Identity On Kusama Or Polkadot's Development Version](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/11/100023937)
   - https://github.com/gdixon/polkadotHackathon/blob/main/identity-on-substrate.png
+
+- [[INTERMEDIATE CHALLENGE] FRAME Identity: Set An Identity On A Local --Dev Chain](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/10/100023936)
+  - https://github.com/gdixon/polkadotHackathon/blob/main/identity-on-node-template-dev-1.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/identity-on-node-template-dev-2.png
