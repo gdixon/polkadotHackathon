@@ -39,3 +39,8 @@
 
 - [[INTERMEDIATE CHALLENGE] Forkless Upgrades](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/6/100023932)
   - https://github.com/gdixon/polkadotHackathon/blob/main/forkless-upgrade-on-node-template.png
+
+- [[ECOSYSTEM CHALLENGE] Enable Multi-Currency Support](https://gitcoin.co/issue/AcalaNetwork/polakdot-hello-world-acala/2/100023952)
+  - https://github.com/gdixon/polkadotHackathon/blob/main/orml-substrate-build
+  - https://github.com/gdixon/polkadotHackathon/blob/main/custom-token-issuance.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/alice-custom-token-balance.png
