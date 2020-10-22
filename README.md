@@ -56,3 +56,16 @@
   - https://twitter.com/gdixon_dev/status/1319071802816122880
   - https://github.com/gdixon/polkadotHackathon/blob/main/phala-network-deployed-token.png
   - https://github.com/gdixon/polkadotHackathon/blob/main/phala-network-running-components.png
+
+- [[INTERMEDIATE CHALLENGE] Smart Contracts - Write An ERC-20 Smart Contract With Ink!](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/9/100023935)
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-contract-and-transfer-ui  
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-contract-and-transfer-ui/cust
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-contract-and-transfer-ui/substrate-front-end-template
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-contract-and-transfer-ui/substrate-node-template
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-contract-and-transfer-ui/1-cust-upload.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-contract-and-transfer-ui/2-cust-deploy.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-contract-and-transfer-ui/3-cust-contract-call.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-contract-and-transfer-ui/4-cust-balances.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-contract-and-transfer-ui/5-alice-100-cust-to-bob-before.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-contract-and-transfer-ui/6-alice-100-cust-to-bob-after.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-contract-and-transfer-ui/7-bob-after-transfer.png
