@@ -69,3 +69,11 @@
   - https://github.com/gdixon/polkadotHackathon/blob/main/ink-contract-and-transfer-ui/5-alice-100-cust-to-bob-before.png
   - https://github.com/gdixon/polkadotHackathon/blob/main/ink-contract-and-transfer-ui/6-alice-100-cust-to-bob-after.png
   - https://github.com/gdixon/polkadotHackathon/blob/main/ink-contract-and-transfer-ui/7-bob-after-transfer.png
+
+- [[INTERMEDIATE CHALLENGE] FRAME Development](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/7/100023933)
+  - https://github.com/gdixon/polkadotHackathon/blob/main/frame-development
+  - https://github.com/gdixon/polkadotHackathon/blob/main/frame-development/substrate-front-end-template
+  - https://github.com/gdixon/polkadotHackathon/blob/main/frame-development/substrate-node-template
+  - https://github.com/gdixon/polkadotHackathon/blob/main/frame-development/1-frame-development-referrals.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/frame-development/2-frame-development-referrals.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/frame-development/3-frame-development-referrals.png
