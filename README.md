@@ -77,3 +77,14 @@
   - https://github.com/gdixon/polkadotHackathon/blob/main/frame-development/1-frame-development-referrals.png
   - https://github.com/gdixon/polkadotHackathon/blob/main/frame-development/2-frame-development-referrals.png
   - https://github.com/gdixon/polkadotHackathon/blob/main/frame-development/3-frame-development-referrals.png
+
+- [[INTERMEDIATE CHALLENGE] FRAME Multisig](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/8/100023934)
+  - https://github.com/gdixon/polkadotHackathon/blob/main/frame-multisig
+  - https://github.com/gdixon/polkadotHackathon/blob/main/frame-multisig/substrate-front-end-template
+  - https://github.com/gdixon/polkadotHackathon/blob/main/frame-multisig/substrate-node-template
+  - https://github.com/gdixon/polkadotHackathon/blob/main/frame-multisig/1-multisig.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/frame-multisig/2-multisig.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/frame-multisig/3-multisig.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/frame-multisig/4-multisig.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/frame-multisig/5-multisig.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/frame-multisig/6-multisig.png
