@@ -8,12 +8,16 @@
   
 - [[BEGINNER CHALLENGE] Launch A Local Substrate Development Chain](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/17/100023943) 
   - https://github.com/gdixon/polkadotHackathon/blob/main/Substrate%20dev%20chain.png
+
 - [[BEGINNER CHALLENGE] Run A Private Substrate Network](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/16/100023942) 
   - https://github.com/gdixon/polkadotHackathon/blob/main/Private%20Substrate%20Network.png
+
 - [[BEGINNER CHALLENGES] Play With Westend](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/15/100023941) 
   - https://github.com/gdixon/polkadotHackathon/blob/main/extrinsic-on-westend
+
 - [[BEGINNER CHALLENGES] Front-End Javascript](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/14/100023940) 
   - https://github.com/gdixon/polkadotHackathon/blob/main/JS-front-end-challenge.txt
+
 - [[BEGINNER CHALLENGES] Back-End Javascript](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/13/100023939) 
   - https://github.com/gdixon/polkadotHackathon/blob/main/JS-back-end-challenge.txt
 
@@ -45,10 +49,8 @@
   - https://github.com/gdixon/polkadotHackathon/blob/main/custom-token-issuance.png
   - https://github.com/gdixon/polkadotHackathon/blob/main/alice-custom-token-balance.png
 
-
 - [[ECOSYSTEM CHALLENGE] Enable NFT Support](https://gitcoin.co/issue/AcalaNetwork/polakdot-hello-world-acala/1/100023951)
   - https://github.com/gdixon/polkadotHackathon/blob/main/orml-nft-substrate-build
-
 
 - [[ECOSYSTEM CHALLENGE] (Beginner) Build And Run A Local Phala Network](https://gitcoin.co/issue/Phala-Network/hello-world-by-polkadot/1/100023945)
   - https://twitter.com/gdixon_dev/status/1319071802816122880
