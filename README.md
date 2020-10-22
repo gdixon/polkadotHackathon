@@ -48,3 +48,9 @@
 
 - [[ECOSYSTEM CHALLENGE] Enable NFT Support](https://gitcoin.co/issue/AcalaNetwork/polakdot-hello-world-acala/1/100023951)
   - https://github.com/gdixon/polkadotHackathon/blob/main/orml-nft-substrate-build
+
+
+- [[ECOSYSTEM CHALLENGE] (Beginner) Build And Run A Local Phala Network](https://gitcoin.co/issue/Phala-Network/hello-world-by-polkadot/1/100023945)
+  - https://twitter.com/gdixon_dev/status/1319071802816122880
+  - https://github.com/gdixon/polkadotHackathon/blob/main/phala-network-deployed-token.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/phala-network-running-components.png
