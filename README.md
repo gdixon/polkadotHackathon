@@ -92,7 +92,6 @@
 - [[ECOSYSTEM CHALLENGE] (Advanced) Build The First Confidential Contract](https://gitcoin.co/issue/Phala-Network/hello-world-by-polkadot/2/100023947)
   - https://github.com/gdixon/apps-ng
   - https://github.com/gdixon/phala-blockchain
-  - https://github.com/gdixon/polkadotHackathon/blob/main/1-phala-secrets-dapp.png
   - https://twitter.com/gdixon_dev/status/1319472130799566849
   - https://github.com/gdixon/polkadotHackathon/blob/main/1-phala-secrets-dapp.png
   - https://github.com/gdixon/polkadotHackathon/blob/main/2-phala-secrets-dapp.png
