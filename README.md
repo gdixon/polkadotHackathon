@@ -88,3 +88,10 @@
   - https://github.com/gdixon/polkadotHackathon/blob/main/frame-multisig/4-multisig.png
   - https://github.com/gdixon/polkadotHackathon/blob/main/frame-multisig/5-multisig.png
   - https://github.com/gdixon/polkadotHackathon/blob/main/frame-multisig/6-multisig.png
+
+- [[ECOSYSTEM CHALLENGE] (Advanced) Build The First Confidential Contract](https://gitcoin.co/issue/Phala-Network/hello-world-by-polkadot/2/100023947)
+  - https://twitter.com/gdixon_dev/status/1319472130799566849
+  - https://github.com/gdixon/polkadotHackathon/blob/main/1-phala-secrets-dapp.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/2-phala-secrets-dapp.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/3-phala-secrets-dapp.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/4-phala-secrets-dapp.png
