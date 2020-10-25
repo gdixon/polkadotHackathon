@@ -1,0 +1,596 @@
+{
+  "metadataVersion": "0.1.0",
+  "source": {
+    "hash": "0xd163e0eccb6fab8ea9718647edcfc7bcb53920c5fd8494f79d8693009a36ae44",
+    "language": "ink! 3.0.0-rc2",
+    "compiler": "rustc 1.49.0-nightly"
+  },
+  "contract": {
+    "name": "Raffle",
+    "version": "0.1.0",
+    "authors": [
+      "Graham Dixon <[graham@gdixon.co.uk]>"
+    ],
+    "description": "Raffle contract"
+  },
+  "spec": {
+    "constructors": [
+      {
+        "args": [
+          {
+            "name": "beneficiary",
+            "type": {
+              "displayName": [
+                "AccountId"
+              ],
+              "type": 1
+            }
+          }
+        ],
+        "docs": [
+          " Creates a new raffle smart contract initialized with the given value."
+        ],
+        "name": [
+          "new"
+        ],
+        "selector": "0xd183512b"
+      }
+    ],
+    "docs": [],
+    "events": [],
+    "messages": [
+      {
+        "args": [],
+        "docs": [
+          " Records entries that pass in more than 0.01 and less than 0.1 (only 1 entry per AccountId)",
+          " Stop allowing entries to be recorded after the raffle_end_time has passed"
+        ],
+        "mutates": true,
+        "name": [
+          "enter"
+        ],
+        "payable": false,
+        "returnType": {
+          "displayName": [
+            "bool"
+          ],
+          "type": 13
+        },
+        "selector": "0x875b8de7"
+      },
+      {
+        "args": [],
+        "docs": [
+          " Draws up to the maximum number of winners (2)"
+        ],
+        "mutates": true,
+        "name": [
+          "draw"
+        ],
+        "payable": false,
+        "returnType": {
+          "displayName": [
+            "bool"
+          ],
+          "type": 13
+        },
+        "selector": "0x39f673d5"
+      }
+    ]
+  },
+  "storage": {
+    "struct": {
+      "fields": [
+        {
+          "layout": {
+            "cell": {
+              "key": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "ty": 1
+            }
+          },
+          "name": "beneficiary"
+        },
+        {
+          "layout": {
+            "cell": {
+              "key": "0x0100000000000000000000000000000000000000000000000000000000000000",
+              "ty": 4
+            }
+          },
+          "name": "funds"
+        },
+        {
+          "layout": {
+            "cell": {
+              "key": "0x0200000000000000000000000000000000000000000000000000000000000000",
+              "ty": 5
+            }
+          },
+          "name": "tickets"
+        },
+        {
+          "layout": {
+            "cell": {
+              "key": "0x0300000000000000000000000000000000000000000000000000000000000000",
+              "ty": 5
+            }
+          },
+          "name": "draws"
+        },
+        {
+          "layout": {
+            "cell": {
+              "key": "0x0400000000000000000000000000000000000000000000000000000000000000",
+              "ty": 5
+            }
+          },
+          "name": "raffle_start_time"
+        },
+        {
+          "layout": {
+            "cell": {
+              "key": "0x0500000000000000000000000000000000000000000000000000000000000000",
+              "ty": 5
+            }
+          },
+          "name": "raffle_end_time"
+        },
+        {
+          "layout": {
+            "struct": {
+              "fields": [
+                {
+                  "layout": {
+                    "struct": {
+                      "fields": [
+                        {
+                          "layout": {
+                            "cell": {
+                              "key": "0x0600000000000000000000000000000000000000000000000000000000000000",
+                              "ty": 6
+                            }
+                          },
+                          "name": "header"
+                        },
+                        {
+                          "layout": {
+                            "struct": {
+                              "fields": [
+                                {
+                                  "layout": {
+                                    "cell": {
+                                      "key": "0x0700000000000000000000000000000000000000000000000000000000000000",
+                                      "ty": 7
+                                    }
+                                  },
+                                  "name": "len"
+                                },
+                                {
+                                  "layout": {
+                                    "array": {
+                                      "cellsPerElem": 1,
+                                      "layout": {
+                                        "cell": {
+                                          "key": "0x0700000001000000000000000000000000000000000000000000000000000000",
+                                          "ty": 8
+                                        }
+                                      },
+                                      "len": 4294967295,
+                                      "offset": "0x0800000000000000000000000000000000000000000000000000000000000000"
+                                    }
+                                  },
+                                  "name": "elems"
+                                }
+                              ]
+                            }
+                          },
+                          "name": "entries"
+                        }
+                      ]
+                    }
+                  },
+                  "name": "keys"
+                },
+                {
+                  "layout": {
+                    "hash": {
+                      "layout": {
+                        "cell": {
+                          "key": "0x0800000001000000000000000000000000000000000000000000000000000000",
+                          "ty": 10
+                        }
+                      },
+                      "offset": "0x0700000001000000000000000000000000000000000000000000000000000000",
+                      "strategy": {
+                        "hasher": "Blake2x256",
+                        "postfix": "",
+                        "prefix": "0x696e6b20686173686d6170"
+                      }
+                    }
+                  },
+                  "name": "values"
+                }
+              ]
+            }
+          },
+          "name": "entrants"
+        },
+        {
+          "layout": {
+            "struct": {
+              "fields": [
+                {
+                  "layout": {
+                    "struct": {
+                      "fields": [
+                        {
+                          "layout": {
+                            "cell": {
+                              "key": "0x0800000001000000000000000000000000000000000000000000000000000000",
+                              "ty": 6
+                            }
+                          },
+                          "name": "header"
+                        },
+                        {
+                          "layout": {
+                            "struct": {
+                              "fields": [
+                                {
+                                  "layout": {
+                                    "cell": {
+                                      "key": "0x0900000001000000000000000000000000000000000000000000000000000000",
+                                      "ty": 7
+                                    }
+                                  },
+                                  "name": "len"
+                                },
+                                {
+                                  "layout": {
+                                    "array": {
+                                      "cellsPerElem": 1,
+                                      "layout": {
+                                        "cell": {
+                                          "key": "0x0900000002000000000000000000000000000000000000000000000000000000",
+                                          "ty": 11
+                                        }
+                                      },
+                                      "len": 4294967295,
+                                      "offset": "0x0a00000001000000000000000000000000000000000000000000000000000000"
+                                    }
+                                  },
+                                  "name": "elems"
+                                }
+                              ]
+                            }
+                          },
+                          "name": "entries"
+                        }
+                      ]
+                    }
+                  },
+                  "name": "keys"
+                },
+                {
+                  "layout": {
+                    "hash": {
+                      "layout": {
+                        "cell": {
+                          "key": "0x0a00000002000000000000000000000000000000000000000000000000000000",
+                          "ty": 12
+                        }
+                      },
+                      "offset": "0x0900000002000000000000000000000000000000000000000000000000000000",
+                      "strategy": {
+                        "hasher": "Blake2x256",
+                        "postfix": "",
+                        "prefix": "0x696e6b20686173686d6170"
+                      }
+                    }
+                  },
+                  "name": "values"
+                }
+              ]
+            }
+          },
+          "name": "entries"
+        },
+        {
+          "layout": {
+            "struct": {
+              "fields": [
+                {
+                  "layout": {
+                    "struct": {
+                      "fields": [
+                        {
+                          "layout": {
+                            "cell": {
+                              "key": "0x0a00000002000000000000000000000000000000000000000000000000000000",
+                              "ty": 6
+                            }
+                          },
+                          "name": "header"
+                        },
+                        {
+                          "layout": {
+                            "struct": {
+                              "fields": [
+                                {
+                                  "layout": {
+                                    "cell": {
+                                      "key": "0x0b00000002000000000000000000000000000000000000000000000000000000",
+                                      "ty": 7
+                                    }
+                                  },
+                                  "name": "len"
+                                },
+                                {
+                                  "layout": {
+                                    "array": {
+                                      "cellsPerElem": 1,
+                                      "layout": {
+                                        "cell": {
+                                          "key": "0x0b00000003000000000000000000000000000000000000000000000000000000",
+                                          "ty": 11
+                                        }
+                                      },
+                                      "len": 4294967295,
+                                      "offset": "0x0c00000002000000000000000000000000000000000000000000000000000000"
+                                    }
+                                  },
+                                  "name": "elems"
+                                }
+                              ]
+                            }
+                          },
+                          "name": "entries"
+                        }
+                      ]
+                    }
+                  },
+                  "name": "keys"
+                },
+                {
+                  "layout": {
+                    "hash": {
+                      "layout": {
+                        "cell": {
+                          "key": "0x0c00000003000000000000000000000000000000000000000000000000000000",
+                          "ty": 12
+                        }
+                      },
+                      "offset": "0x0b00000003000000000000000000000000000000000000000000000000000000",
+                      "strategy": {
+                        "hasher": "Blake2x256",
+                        "postfix": "",
+                        "prefix": "0x696e6b20686173686d6170"
+                      }
+                    }
+                  },
+                  "name": "values"
+                }
+              ]
+            }
+          },
+          "name": "winners"
+        }
+      ]
+    }
+  },
+  "types": [
+    {
+      "def": {
+        "composite": {
+          "fields": [
+            {
+              "type": 2
+            }
+          ]
+        }
+      },
+      "path": [
+        "ink_env",
+        "types",
+        "AccountId"
+      ]
+    },
+    {
+      "def": {
+        "array": {
+          "len": 32,
+          "type": 3
+        }
+      }
+    },
+    {
+      "def": {
+        "primitive": "u8"
+      }
+    },
+    {
+      "def": {
+        "primitive": "u128"
+      }
+    },
+    {
+      "def": {
+        "primitive": "u64"
+      }
+    },
+    {
+      "def": {
+        "composite": {
+          "fields": [
+            {
+              "name": "last_vacant",
+              "type": 7
+            },
+            {
+              "name": "len",
+              "type": 7
+            },
+            {
+              "name": "len_entries",
+              "type": 7
+            }
+          ]
+        }
+      },
+      "path": [
+        "ink_storage",
+        "collections",
+        "stash",
+        "Header"
+      ]
+    },
+    {
+      "def": {
+        "primitive": "u32"
+      }
+    },
+    {
+      "def": {
+        "variant": {
+          "variants": [
+            {
+              "fields": [
+                {
+                  "type": 9
+                }
+              ],
+              "name": "Vacant"
+            },
+            {
+              "fields": [
+                {
+                  "type": 1
+                }
+              ],
+              "name": "Occupied"
+            }
+          ]
+        }
+      },
+      "params": [
+        1
+      ],
+      "path": [
+        "ink_storage",
+        "collections",
+        "stash",
+        "Entry"
+      ]
+    },
+    {
+      "def": {
+        "composite": {
+          "fields": [
+            {
+              "name": "next",
+              "type": 7
+            },
+            {
+              "name": "prev",
+              "type": 7
+            }
+          ]
+        }
+      },
+      "path": [
+        "ink_storage",
+        "collections",
+        "stash",
+        "VacantEntry"
+      ]
+    },
+    {
+      "def": {
+        "composite": {
+          "fields": [
+            {
+              "name": "value",
+              "type": 5
+            },
+            {
+              "name": "key_index",
+              "type": 7
+            }
+          ]
+        }
+      },
+      "params": [
+        5
+      ],
+      "path": [
+        "ink_storage",
+        "collections",
+        "hashmap",
+        "ValueEntry"
+      ]
+    },
+    {
+      "def": {
+        "variant": {
+          "variants": [
+            {
+              "fields": [
+                {
+                  "type": 9
+                }
+              ],
+              "name": "Vacant"
+            },
+            {
+              "fields": [
+                {
+                  "type": 5
+                }
+              ],
+              "name": "Occupied"
+            }
+          ]
+        }
+      },
+      "params": [
+        5
+      ],
+      "path": [
+        "ink_storage",
+        "collections",
+        "stash",
+        "Entry"
+      ]
+    },
+    {
+      "def": {
+        "composite": {
+          "fields": [
+            {
+              "name": "value",
+              "type": 1
+            },
+            {
+              "name": "key_index",
+              "type": 7
+            }
+          ]
+        }
+      },
+      "params": [
+        1
+      ],
+      "path": [
+        "ink_storage",
+        "collections",
+        "hashmap",
+        "ValueEntry"
+      ]
+    },
+    {
+      "def": {
+        "primitive": "bool"
+      }
+    }
+  ]
+}
