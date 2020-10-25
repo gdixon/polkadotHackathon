@@ -17,9 +17,9 @@ pub mod raffle {
     /// 60 * 15
     const RUN_TIME: u64 = 900;
     /// 0.01*(10**18)
-    const MIN_PRICE: u128 = 10000000000000;
+    const MIN_PRICE: u128 = 10000000000000000;
     /// 0.1*(10**18)
-    const MAX_PRICE: u128 = 100000000000000;
+    const MAX_PRICE: u128 = 100000000000000000;
 
     #[ink(storage)]
     pub struct Raffle {
