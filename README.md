@@ -98,16 +98,16 @@
   - https://github.com/gdixon/polkadotHackathon/blob/main/4-phala-secrets-dapp.png
 
 - [[ADVANCED CHALLENGE] Smart Contracts - Build A Charity Raffle](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/3/100023929)
- - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract
- - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/substrate-node-template
- - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/lib.rs
- - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle.wasm
- - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/metadata.json
- - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle.sol
- - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle-wasm-upload.png
- - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle-wasm-deploy.png
- - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle-wasm-deployed.png
- - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle-wasm-methods.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/substrate-node-template
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/lib.rs
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle.wasm
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/metadata.json
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle.sol
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle-wasm-upload.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle-wasm-deploy.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle-wasm-deployed.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle-wasm-methods.png
 
 ### Unfinished/Unfinishable (Challenge was modified after I started)
 
