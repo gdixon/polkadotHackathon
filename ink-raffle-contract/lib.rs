@@ -73,7 +73,7 @@ pub mod raffle {
             let now = Self::now();
             let caller = self.env().caller();
             let amount = self.env().transferred_balance();
-            // check if the raffle has started
+            // check if the raffle has ended
             if self.raffle_end_time != 0 && self.tickets >= MIN_ENTRIES && now > self.raffle_end_time {
 
                 // Closed for new entants
