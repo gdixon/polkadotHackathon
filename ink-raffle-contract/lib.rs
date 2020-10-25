@@ -3,7 +3,7 @@
 use ink_lang as ink;
 
 #[ink::contract]
-pub mod raffle {
+mod raffle {
     #[cfg(not(feature = "ink-as-dependency"))]
     use ink_storage::{
         collections::HashMap as StorageHashMap,
@@ -38,8 +38,8 @@ pub mod raffle {
         entrants: StorageHashMap<AccountId, u64>,
         // record the entries as ticket->acc
         entries: StorageHashMap<u64, AccountId>,
-        // record the winners as drawNo->acc
-        winners: StorageHashMap<u64, AccountId>
+        // record the winners as draw_no->acc
+        winners: [Option<AccountId>; MAX_DRAWS as usize]
     }
 
     impl Raffle {
@@ -55,7 +55,7 @@ pub mod raffle {
                 raffle_end_time: 0,
                 entrants: StorageHashMap::new(),
                 entries: StorageHashMap::new(),
-                winners: StorageHashMap::new()
+                winners: [None, None]
             }
         }
 
@@ -74,33 +74,34 @@ pub mod raffle {
             Self::env().block_number() * Self::now()
         }
 
-        /// Records entries that pass in more than 0.01 and less than 0.1 (only 1 entry per AccountId)
+        /// Records entries that pass in between 0.01 and 0.1 inclusively (only 1 entry per AccountId)
         /// Stop allowing entries to be recorded after the raffle_end_time has passed
         #[ink(message)]
         #[ink(payable)]
-        pub fn enter(&mut self) -> bool {
+        pub fn enter(&mut self) {
             // use std::time::Instant;
             let now = Self::now();
             let caller = self.env().caller();
             let amount = self.env().transferred_balance();
+            
             // check if the raffle has ended
-            if self.raffle_end_time != 0 && self.tickets >= MIN_ENTRIES && now > self.raffle_end_time {
+            assert!(
+                self.raffle_end_time == 0 || self.tickets < MIN_ENTRIES || now < self.raffle_end_time,
+                "Closed for new entants"
+            );
 
-                // Closed for new entants
-                return false;
-            }
             // check if the given amount is within range
-            if amount < MIN_PRICE || amount > MAX_PRICE {
+            assert!(
+                amount >= MIN_PRICE && amount <= MAX_PRICE,
+                "Wrong amount paid"
+            );
 
-                // Wrong amount paid
-                return false;
-            }
             // check if the caller has already been entered into the raffle
-            if self.entrants.contains_key(&caller) {
+            assert!(
+                self.entrants.contains_key(&caller) == false,
+                "Must only enter once"
+            );
 
-                // Must only enter once
-                return false;
-            }
             // incr ticket number
             self.tickets += 1;
             // record the entrant
@@ -117,26 +118,22 @@ pub mod raffle {
 
             // save the funds to send to beneficiary later
             self.funds += amount;
-
-            // successfully entered
-            return true;
         }
 
-        /// Draws up to the maximum number of winners (2)
+        /// Draws up to the maximum number of winners (MAX_DRAWS)
         #[ink(message)]
-        pub fn draw(&mut self) -> bool {
-            // check if in draw time
-            if self.raffle_end_time == 0 || self.tickets < MIN_ENTRIES || Self::now() < self.raffle_end_time {
-                
-                // Not ready to draw yet
-                return false;
-            }
+        pub fn draw(&mut self) {
+            // check if we're inside of draw time
+            assert!(
+                self.raffle_end_time > 0 && self.tickets >= MIN_ENTRIES && Self::now() >= self.raffle_end_time,
+                "Not ready to draw yet"
+            );
+
             // ensure we only draw n* times
-            if self.draws >= MAX_DRAWS {
-                
-                // Winners already decided
-                return false;
-            }
+            assert!(
+                self.draws < MAX_DRAWS,
+                "Winners already decided"
+            );
 
             // incr the draws
             self.draws += 1;
@@ -148,16 +145,20 @@ pub mod raffle {
             let winning_account = self.entries[&winner];
             
             // record the winner
-            self.winners.insert(self.draws, winning_account);
+            self.winners[self.draws as usize] = Some(winning_account);
 
             // send all funds to the beneficiary
             if self.draws == MAX_DRAWS {
                 // transfer the funds sent in
                 let _ = self.env().transfer(self.beneficiary, self.funds);
             }
+        }
 
-            // successfully completed
-            return true;
+        /// Return the winning accounts from storage
+        #[ink(message)]
+        pub fn get_winners(&mut self) -> [Option<AccountId>; MAX_DRAWS as usize] {
+            // return the winners
+            self.winners
         }
         
     }

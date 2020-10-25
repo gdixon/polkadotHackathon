@@ -101,7 +101,7 @@ contract raffle {
     function draw() public payable {
         // check if in draw time
         require(
-            (raffleEndTime > 0 && tickets >= minEntries && block.timestamp > raffleEndTime),
+            (raffleEndTime > 0 && tickets >= minEntries && block.timestamp >= raffleEndTime),
             "Not ready to draw yet"
         );
 

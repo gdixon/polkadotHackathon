@@ -1,12 +1,12 @@
 {
   "metadataVersion": "0.1.0",
   "source": {
-    "hash": "0x07a99a3f2bbacd22a1e9a1d9bc2d6950b71fe1181259aff9fe457553d71eb82a",
+    "hash": "0xf07f98f3d1190be0ff94989aa234b00565c354a09a71c567ae4f77d0ad91609d",
     "language": "ink! 3.0.0-rc2",
     "compiler": "rustc 1.49.0-nightly"
   },
   "contract": {
-    "name": "Raffle",
+    "name": "raffle",
     "version": "0.1.0",
     "authors": [
       "Graham Dixon <[graham@gdixon.co.uk]>"
@@ -42,7 +42,7 @@
       {
         "args": [],
         "docs": [
-          " Records entries that pass in more than 0.01 and less than 0.1 (only 1 entry per AccountId)",
+          " Records entries that pass in between 0.01 and 0.1 inclusively (only 1 entry per AccountId)",
           " Stop allowing entries to be recorded after the raffle_end_time has passed"
         ],
         "mutates": true,
@@ -50,31 +50,37 @@
           "enter"
         ],
         "payable": true,
-        "returnType": {
-          "displayName": [
-            "bool"
-          ],
-          "type": 13
-        },
+        "returnType": null,
         "selector": "0x875b8de7"
       },
       {
         "args": [],
         "docs": [
-          " Draws up to the maximum number of winners (2)"
+          " Draws up to the maximum number of winners (MAX_DRAWS)"
         ],
         "mutates": true,
         "name": [
           "draw"
         ],
         "payable": false,
+        "returnType": null,
+        "selector": "0x39f673d5"
+      },
+      {
+        "args": [],
+        "docs": [
+          " Return the winning accounts from storage"
+        ],
+        "mutates": true,
+        "name": [
+          "get_winners"
+        ],
+        "payable": false,
         "returnType": {
-          "displayName": [
-            "bool"
-          ],
+          "displayName": [],
           "type": 13
         },
-        "selector": "0x39f673d5"
+        "selector": "0x9299db13"
       }
     ]
   },
@@ -297,80 +303,33 @@
         },
         {
           "layout": {
-            "struct": {
-              "fields": [
-                {
-                  "layout": {
-                    "struct": {
+            "array": {
+              "cellsPerElem": 2,
+              "layout": {
+                "enum": {
+                  "dispatchKey": "0x0e00000002000000000000000000000000000000000000000000000000000000",
+                  "variants": {
+                    "0": {
                       "fields": [
                         {
                           "layout": {
                             "cell": {
-                              "key": "0x0a00000002000000000000000000000000000000000000000000000000000000",
-                              "ty": 6
+                              "key": "0x0f00000002000000000000000000000000000000000000000000000000000000",
+                              "ty": 1
                             }
                           },
-                          "name": "header"
-                        },
-                        {
-                          "layout": {
-                            "struct": {
-                              "fields": [
-                                {
-                                  "layout": {
-                                    "cell": {
-                                      "key": "0x0b00000002000000000000000000000000000000000000000000000000000000",
-                                      "ty": 7
-                                    }
-                                  },
-                                  "name": "len"
-                                },
-                                {
-                                  "layout": {
-                                    "array": {
-                                      "cellsPerElem": 1,
-                                      "layout": {
-                                        "cell": {
-                                          "key": "0x0b00000003000000000000000000000000000000000000000000000000000000",
-                                          "ty": 11
-                                        }
-                                      },
-                                      "len": 4294967295,
-                                      "offset": "0x0c00000002000000000000000000000000000000000000000000000000000000"
-                                    }
-                                  },
-                                  "name": "elems"
-                                }
-                              ]
-                            }
-                          },
-                          "name": "entries"
+                          "name": null
                         }
                       ]
+                    },
+                    "1": {
+                      "fields": []
                     }
-                  },
-                  "name": "keys"
-                },
-                {
-                  "layout": {
-                    "hash": {
-                      "layout": {
-                        "cell": {
-                          "key": "0x0c00000003000000000000000000000000000000000000000000000000000000",
-                          "ty": 12
-                        }
-                      },
-                      "offset": "0x0b00000003000000000000000000000000000000000000000000000000000000",
-                      "strategy": {
-                        "hasher": "Blake2x256",
-                        "postfix": "",
-                        "prefix": "0x696e6b20686173686d6170"
-                      }
-                    }
-                  },
-                  "name": "values"
+                  }
                 }
-              ]
+              },
+              "len": 2,
+              "offset": "0x0a00000002000000000000000000000000000000000000000000000000000000"
             }
           },
           "name": "winners"
@@ -589,8 +548,36 @@
     },
     {
       "def": {
-        "primitive": "bool"
+        "array": {
+          "len": 2,
+          "type": 14
+        }
       }
+    },
+    {
+      "def": {
+        "variant": {
+          "variants": [
+            {
+              "name": "None"
+            },
+            {
+              "fields": [
+                {
+                  "type": 1
+                }
+              ],
+              "name": "Some"
+            }
+          ]
+        }
+      },
+      "params": [
+        1
+      ],
+      "path": [
+        "Option"
+      ]
     }
   ]
 }
