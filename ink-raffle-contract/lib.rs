@@ -49,11 +49,11 @@ pub mod raffle {
         pub fn new(beneficiary: AccountId) -> Self {
             Self { 
                 beneficiary: beneficiary,
-                raffle_start_time: 0,
-                raffle_end_time: 0,
+                funds: 0,
                 tickets: 0,
                 draws: 0,
-                funds: 0,
+                raffle_start_time: 0,
+                raffle_end_time: 0,
                 entrants: StorageHashMap::new(),
                 entries: StorageHashMap::new(),
                 winners: StorageHashMap::new()
