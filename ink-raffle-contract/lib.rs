@@ -80,7 +80,7 @@ pub mod raffle {
                 return false;
             }
             // check if the given amount is within range
-            if amount > MIN_PRICE && amount < MAX_PRICE {
+            if amount >= MIN_PRICE && amount <= MAX_PRICE {
 
                 // Wrong amount paid
                 return false;
