@@ -122,7 +122,7 @@ pub mod raffle {
                 return false;
             }
             // ensure we only draw n* times
-            if self.draws > MAX_DRAWS {
+            if self.draws >= MAX_DRAWS {
                 
                 // Winners already decided
                 return false;
