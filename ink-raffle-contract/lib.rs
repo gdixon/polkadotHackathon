@@ -74,13 +74,13 @@ pub mod raffle {
             let caller = self.env().caller();
             let amount = self.env().transferred_balance();
             // check if the raffle has started
-            if self.raffle_end_time == 0 || self.tickets < MIN_ENTRIES || now < self.raffle_end_time {
+            if self.raffle_end_time != 0 && self.tickets > MIN_ENTRIES && now > self.raffle_end_time {
 
                 // Closed for new entants
                 return false;
             }
             // check if the given amount is within range
-            if amount >= MIN_PRICE && amount <= MAX_PRICE {
+            if amount < MIN_PRICE && amount > MAX_PRICE {
 
                 // Wrong amount paid
                 return false;
@@ -116,13 +116,13 @@ pub mod raffle {
         #[ink(message)]
         pub fn draw(&mut self) -> bool {
             // check if in draw time
-            if self.raffle_end_time > 0 && self.tickets >= MIN_ENTRIES && Self::now() > self.raffle_end_time {
+            if self.raffle_end_time == 0 || self.tickets < MIN_ENTRIES || Self::now() < self.raffle_end_time {
                 
                 // Not ready to draw yet
                 return false;
             }
             // ensure we only draw n* times
-            if self.draws < MAX_DRAWS {
+            if self.draws > MAX_DRAWS {
                 
                 // Winners already decided
                 return false;
