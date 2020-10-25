@@ -10,8 +10,9 @@ pub mod raffle {
         collections::HashMap as StorageHashMap,
     };
 
-    // variable controls as defined
+    /// min number of entries before the timer starts
     const MIN_ENTRIES: u64 = 5;
+    /// max number of draws before funds are transferred to beneficiary
     const MAX_DRAWS: u64 = 2;
     /// 60 * 15
     const RUN_TIME: u64 = 900;
@@ -30,9 +31,9 @@ pub mod raffle {
         tickets: u64,
         // record how many winners have been drawn
         draws: u64,
-        // when the raffle starts record the start time
+        // when the MIN_ENTRIES is satisfied record the start time
         raffle_start_time: Timestamp,
-        // start time plus RUN_TIME
+        // when the MIN_ENTRIES is satisfied record start time plus RUN_TIME
         raffle_end_time: Timestamp,
         // record the entrants as acc->ticket
         entrants: StorageHashMap<AccountId, u64>,
@@ -81,17 +82,17 @@ pub mod raffle {
             // check if the given amount is within range
             if amount > MIN_PRICE && amount < MAX_PRICE {
 
-                // Must only enter once
+                // Wrong amount paid
                 return false;
             }
             // check if the caller has already been entered into the raffle
             if self.entrants.contains_key(&caller) {
 
-                // Wrong amount paid
+                // Must only enter once
                 return false;
             }
             // incr ticket number
-            self.tickets = self.tickets + 1;
+            self.tickets += 1;
             // record the entrant
             self.entrants.insert(caller, self.tickets);
             self.entries.insert(self.tickets, caller);
@@ -128,9 +129,9 @@ pub mod raffle {
             }
 
             // incr the draws
-            self.draws+=1;
+            self.draws += 1;
 
-            // pick the winner by picking a "random" entry from available tickets 
+            // pick the winner at "random" from available tickets 
             // (this is unsafe and is barely random - but no rule to say it must be - for a real contract use an oracle)
             let winner = Self::now() % self.tickets + 1;
 
