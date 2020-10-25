@@ -67,6 +67,7 @@ pub mod raffle {
         /// Records entries that pass in more than 0.01 and less than 0.1 (only 1 entry per AccountId)
         /// Stop allowing entries to be recorded after the raffle_end_time has passed
         #[ink(message)]
+        #[ink(payable)]
         pub fn enter(&mut self) -> bool {
             // use std::time::Instant;
             let now = Self::now();

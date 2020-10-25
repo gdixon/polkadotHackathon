@@ -1,7 +1,7 @@
 {
   "metadataVersion": "0.1.0",
   "source": {
-    "hash": "0x42250412d6d68268f00b3381128f8dcde8ce6821d889592fca812f3a7d22ee6e",
+    "hash": "0x73b76c3b10f0600e1b72ca6a9903e53a8f2b7754231bad541260905c4beb9e1c",
     "language": "ink! 3.0.0-rc2",
     "compiler": "rustc 1.49.0-nightly"
   },
@@ -49,7 +49,7 @@
         "name": [
           "enter"
         ],
-        "payable": false,
+        "payable": true,
         "returnType": {
           "displayName": [
             "bool"
