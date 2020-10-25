@@ -64,6 +64,16 @@ pub mod raffle {
             Self::env().block_timestamp()
         }
 
+        /// Pseudo random number -- block * time
+        /// (
+        ///     - this is unsafe and potentially deterministic 
+        ///     - no rule to say it has to be safe or truly random though 
+        ///     - for a real contract use an oracle
+        /// )
+        fn rand() -> u64 {
+            Self::env().block_number() * Self::now()
+        }
+
         /// Records entries that pass in more than 0.01 and less than 0.1 (only 1 entry per AccountId)
         /// Stop allowing entries to be recorded after the raffle_end_time has passed
         #[ink(message)]
@@ -130,10 +140,9 @@ pub mod raffle {
 
             // incr the draws
             self.draws += 1;
-
-            // pick the winner at "random" from available tickets 
-            // (this is unsafe and is barely random - but no rule to say it must be - for a real contract use an oracle)
-            let winner = Self::now() % self.tickets + 1;
+            
+            // pick the winner at "random" from available tickets
+            let winner = Self::rand() % self.tickets + 1;
 
             // record the winning account
             let winning_account = self.entries[&winner];
