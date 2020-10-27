@@ -1,7 +1,7 @@
 {
   "metadataVersion": "0.1.0",
   "source": {
-    "hash": "0xf07f98f3d1190be0ff94989aa234b00565c354a09a71c567ae4f77d0ad91609d",
+    "hash": "0x53a0bf3309e84c2c854993b13ccb0df4206b0283a2371247ddf9e3f8f8f6b36f",
     "language": "ink! 3.0.0-rc2",
     "compiler": "rustc 1.49.0-nightly"
   },
@@ -43,7 +43,7 @@
         "args": [],
         "docs": [
           " Records entries that pass in between 0.01 and 0.1 inclusively (only 1 entry per AccountId)",
-          " Stop allowing entries to be recorded after the raffle_end_time has passed"
+          " Stop allowing entries to be recorded after the end_time has passed"
         ],
         "mutates": true,
         "name": [
@@ -69,9 +69,81 @@
       {
         "args": [],
         "docs": [
+          " Return the end_time from storage"
+        ],
+        "mutates": false,
+        "name": [
+          "get_end"
+        ],
+        "payable": false,
+        "returnType": {
+          "displayName": [
+            "u64"
+          ],
+          "type": 5
+        },
+        "selector": "0x9094ff74"
+      },
+      {
+        "args": [],
+        "docs": [
+          " Return the start_time from storage"
+        ],
+        "mutates": false,
+        "name": [
+          "get_start"
+        ],
+        "payable": false,
+        "returnType": {
+          "displayName": [
+            "u64"
+          ],
+          "type": 5
+        },
+        "selector": "0x6052ff7e"
+      },
+      {
+        "args": [],
+        "docs": [
+          " Return the number of tickets sold from storage"
+        ],
+        "mutates": false,
+        "name": [
+          "get_tickets_sold"
+        ],
+        "payable": false,
+        "returnType": {
+          "displayName": [
+            "u64"
+          ],
+          "type": 5
+        },
+        "selector": "0x742d9a80"
+      },
+      {
+        "args": [],
+        "docs": [
+          " Return the number of tickets drawn from storage"
+        ],
+        "mutates": false,
+        "name": [
+          "get_tickets_drawn"
+        ],
+        "payable": false,
+        "returnType": {
+          "displayName": [
+            "u64"
+          ],
+          "type": 5
+        },
+        "selector": "0xb3aee3dc"
+      },
+      {
+        "args": [],
+        "docs": [
           " Return the winning accounts from storage"
         ],
-        "mutates": true,
+        "mutates": false,
         "name": [
           "get_winners"
         ],
@@ -130,7 +202,7 @@
               "ty": 5
             }
           },
-          "name": "raffle_start_time"
+          "name": "start_time"
         },
         {
           "layout": {
@@ -139,7 +211,7 @@
               "ty": 5
             }
           },
-          "name": "raffle_end_time"
+          "name": "end_time"
         },
         {
           "layout": {

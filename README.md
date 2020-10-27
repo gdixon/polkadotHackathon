@@ -105,11 +105,27 @@
   - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle.wasm
   - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/metadata.json
   - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle.sol
-  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle-wasm-upload.png
-  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle-wasm-deploy.png
-  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle-wasm-deployed.png
-  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/raffle-wasm-methods.png
-
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/1-upload-wasm.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/2-uploaded-wasm.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/3-deploy-wasm.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/4-deployed-wasm.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/5-contracts-methods.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/6-enter-pay-too-much.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/7-rejected.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/8-enter-pay-too-little.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/9-rejected.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/10-enter-pay-correct-amount.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/11-enter-accepted.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/12-enter-again.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/13-rejected.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/14-min-entries-entered.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/15-draw-too-early.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/16-draw-1.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/17-draw-2.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/18-draw-3-rejected.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/19-funds-transferred-to-beneficiary.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/20-funds-transferred-out-of-contract.png
+  
 ### Unresolved
 
 - [[INTERMEDIATE CHALLENGE] Deploying An Auction Solidity Contract On Plasm Network](https://gitcoin.co/issue/staketechnologies/hello-world-by-polkadot/5/100023959)
