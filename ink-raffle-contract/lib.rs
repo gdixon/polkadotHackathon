@@ -50,7 +50,7 @@ mod raffle {
     }
 
     impl Raffle {
-        /// Creates a new raffle smart contract initialized with the given value.
+        /// Creates a new raffle smart contract initialised with the given beneficiary
         #[ink(constructor)]
         pub fn new(beneficiary: AccountId) -> Self {
             Self { 
