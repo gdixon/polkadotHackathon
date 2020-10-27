@@ -173,28 +173,28 @@ mod raffle {
         /// Return the end_time from storage
         #[ink(message)]
         pub fn get_end(&self) -> u64 {
-            // return the winners
+            // return the end_time
             self.end_time
         }
 
         /// Return the start_time from storage
         #[ink(message)]
         pub fn get_start(&self) -> u64 {
-            // return the winners
+            // return the start_time
             self.start_time
         }
         
         /// Return the number of tickets sold from storage
         #[ink(message)]
         pub fn get_tickets_sold(&self) -> u64 {
-            // return the winners
+            // return the number of tickets
             self.tickets
         }
 
         /// Return the number of tickets drawn from storage
         #[ink(message)]
         pub fn get_tickets_drawn(&self) -> u64 {
-            // return the winners
+            // return the number of draws
             self.draws
         }
 
