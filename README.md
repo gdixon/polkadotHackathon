@@ -126,8 +126,5 @@
   - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/19-funds-transferred-to-beneficiary.png
   - https://github.com/gdixon/polkadotHackathon/blob/main/ink-raffle-contract/20-funds-transferred-out-of-contract.png
   
-### Unresolved
-
 - [[INTERMEDIATE CHALLENGE] Deploying An Auction Solidity Contract On Plasm Network](https://gitcoin.co/issue/staketechnologies/hello-world-by-polkadot/5/100023959)
-  - I started this when the challenge was asking for us to use solang to compile and then to deploy to plasmnet. Having done most of the work (including scripting and recording most of a video before running into unresolvable problems), I became disheartened to see that the devs gave up on the original format. Deploying with remix is already part of a different challenge, and re-recording my video to complete a simpler challenge isn't what I signed up for, so I'm planning on leaving it incomplete - although I might return to it if I find time later.
-  - https://github.com/gdixon/polkadotHackathon/blob/main/deploy-auction-to-plasm
+  - https://youtu.be/iO8WVLliK9Q
