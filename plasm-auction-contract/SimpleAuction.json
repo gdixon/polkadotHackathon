@@ -1,0 +1,322 @@
+{
+    "contract": {
+        "authors": [
+            "unknown"
+        ],
+        "name": "SimpleAuction",
+        "version": "0.0.1"
+    },
+    "metadataVersion": "0.1.0",
+    "source": {
+        "compiler": "solang 0.1.4",
+        "hash": "0xd325bdc28b0e7a655e2cb829c837398778dbae91db10094d46a5f3fba175d4cb",
+        "language": "Solidity 0.1.4"
+    },
+    "spec": {
+        "constructors": [
+            {
+                "args": [
+                    {
+                        "name": "_biddingTime",
+                        "type": {
+                            "display_name": [
+                                "u128"
+                            ],
+                            "type": 4
+                        }
+                    },
+                    {
+                        "name": "_beneficiary",
+                        "type": {
+                            "display_name": [
+                                "AccountId"
+                            ],
+                            "type": 1
+                        }
+                    }
+                ],
+                "docs": [
+                    "Create a simple auction with `_biddingTime` seconds bidding time on behalf of the beneficiary AccountId `_beneficiary`.\n\n"
+                ],
+                "name": "new",
+                "selector": "0x72406256"
+            }
+        ],
+        "events": [
+            {
+                "args": [
+                    {
+                        "indexed": false,
+                        "name": "bidder",
+                        "type": {
+                            "display_name": [
+                                "AccountId"
+                            ],
+                            "type": 1
+                        }
+                    },
+                    {
+                        "indexed": false,
+                        "name": "amount",
+                        "type": {
+                            "display_name": [
+                                "u128"
+                            ],
+                            "type": 4
+                        }
+                    }
+                ],
+                "docs": [
+                    ""
+                ],
+                "name": "HighestBidIncreased"
+            },
+            {
+                "args": [
+                    {
+                        "indexed": false,
+                        "name": "winner",
+                        "type": {
+                            "display_name": [
+                                "AccountId"
+                            ],
+                            "type": 1
+                        }
+                    },
+                    {
+                        "indexed": false,
+                        "name": "amount",
+                        "type": {
+                            "display_name": [
+                                "u128"
+                            ],
+                            "type": 4
+                        }
+                    }
+                ],
+                "docs": [
+                    ""
+                ],
+                "name": "AuctionEnded"
+            }
+        ],
+        "messages": [
+            {
+                "args": [],
+                "docs": [
+                    ""
+                ],
+                "mutates": false,
+                "name": ["auction_end_time"],
+                "payable": false,
+                "return_type": {
+                    "display_name": [
+                        "u128"
+                    ],
+                    "type": 4
+                },
+                "selector": "0x7520b06e"
+            },
+            {
+                "args": [],
+                "docs": [
+                    ""
+                ],
+                "mutates": false,
+                "name": ["highest_bid"],
+                "payable": false,
+                "return_type": {
+                    "display_name": [
+                        "u128"
+                    ],
+                    "type": 4
+                },
+                "selector": "0xe5c60091"
+            },
+            {
+                "args": [],
+                "docs": [
+                    "Withdraw a bid that was overbid.\n\n"
+                ],
+                "mutates": true,
+                "name": "returnFunds",
+                "return_type": {
+                    "display_name": [
+                        "bool"
+                    ],
+                    "type": 5
+                },
+                "selector": "0x1eb5ea2e"
+            },
+            {
+                "args": [],
+                "docs": [
+                    "Bid on the auction with the value sent together with this transaction. The value will only be refunded if the auction is not won.\n\n"
+                ],
+                "mutates": true,
+                "name": "bid",
+                "payable": true,
+                "return_type": null,
+                "selector": "0x1998aeef"
+            },
+            {
+                "args": [],
+                "docs": [
+                    "End the auction and send the highest bid to the beneficiary.\n\n"
+                ],
+                "mutates": true,
+                "name": "auctionEnd",
+                "return_type": null,
+                "selector": "0x2a24f46c"
+            },
+            {
+                "args": [],
+                "docs": [
+                    ""
+                ],
+                "mutates": false,
+                "name": ["highest_bidder"],
+                "payable": false,
+                "return_type": {
+                    "display_name": [
+                        "AccountId"
+                    ],
+                    "type": 1
+                },
+                "selector": "0xbd9215f4"
+            },
+            {
+                "args": [
+                    {
+                        "name": "acc",
+                        "type": {
+                            "display_name": [
+                                "AccountId"
+                            ],
+                            "type": 1
+                        }
+                    }
+                ],
+                "docs": [
+                    ""
+                ],
+                "mutates": false,
+                "name": ["get_pending_return"],
+                "payable": false,
+                "return_type": {
+                    "display_name": [
+                        "u128"
+                    ],
+                    "type": 4
+                },
+                "selector": "0x1eccf0a8"
+            },
+            {
+                "args": [],
+                "docs": [
+                    ""
+                ],
+                "mutates": false,
+                "name": ["get_beneficiary"],
+                "payable": false,
+                "return_type": {
+                    "display_name": [
+                        "AccountId"
+                    ],
+                    "type": 1
+                },
+                "selector": "0xd9fc907e"
+            }
+        ]
+    },
+    "storage": {
+        "struct": {
+            "fields": [
+                {
+                    "layout": {
+                        "cell": {
+                            "key": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                            "ty": 1
+                        }
+                    },
+                    "name": "beneficiary"
+                },
+                {
+                    "layout": {
+                        "cell": {
+                            "key": "0x0000000000000000000000000000000000000000000000000000000000000001",
+                            "ty": 2
+                        }
+                    },
+                    "name": "auctionEndTime"
+                },
+                {
+                    "layout": {
+                        "cell": {
+                            "key": "0x0000000000000000000000000000000000000000000000000000000000000002",
+                            "ty": 1
+                        }
+                    },
+                    "name": "highestBidder"
+                },
+                {
+                    "layout": {
+                        "cell": {
+                            "key": "0x0000000000000000000000000000000000000000000000000000000000000003",
+                            "ty": 2
+                        }
+                    },
+                    "name": "highestBid"
+                },
+                {
+                    "layout": {
+                        "cell": {
+                            "key": "0x0000000000000000000000000000000000000000000000000000000000000005",
+                            "ty": 3
+                        }
+                    },
+                    "name": "ended"
+                }
+            ]
+        }
+    },
+    "types": [
+        {
+            "def": {
+                "composite": {
+                    "fields": [
+                        {
+                            "type": 2
+                        }
+                    ]
+                }
+            },
+            "path": [
+                "AccountId"
+            ]
+        },
+        {
+            "def": {
+                "array": {
+                    "len": 32,
+                    "type": 3
+                }
+            }
+        },
+        {
+            "def": {
+                "primitive": "u8"
+            }
+        },
+        {
+            "def": {
+                "primitive": "u128"
+            }
+        },
+        {
+            "def": {
+                "primitive": "bool"
+            }
+        }
+    ]
+}
