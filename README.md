@@ -129,3 +129,6 @@
 - [[INTERMEDIATE CHALLENGE] Deploying An Auction Solidity Contract On Plasm Network](https://gitcoin.co/issue/staketechnologies/hello-world-by-polkadot/5/100023959)
   - https://youtu.be/iO8WVLliK9Q
   - deploy to plasm using solang: https://github.com/gdixon/polkadotHackathon/blob/main/plasm-auction-contract/
+
+- [[ADVANCED CHALLENGE] REST APIs - Read An Account's Pending Payouts](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/5/100023931)
+  - https://github.com/gdixon/kusama-payouts
