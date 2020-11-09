@@ -132,3 +132,23 @@
 
 - [[ADVANCED CHALLENGE] REST APIs - Read An Account's Pending Payouts](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/5/100023931)
   - https://github.com/gdixon/kusama-payouts
+
+- [[ADVANCED CHALLENGE] Build A DApp](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/2/100023928)
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/substrate-node-template
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/substrate-front-end-template
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/ink-auction-contract/lib.rs
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/ink-auction-contract/auction.wasm
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/ink-auction-contract/metadata.json
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/1-upload-wasm.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/2-ink-auction.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/3-new-auction.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/4-alice-stash-bid.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/5-bob-bid.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/6-bob-stash-bid.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/7-auction-finished.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/8-alice-calls-complete.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/9-alice-stash-returnable-funds.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/10-alice-stash-retrieves-funds.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/11-bob-returnable-funds.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/12-bob-retrieves-funds.png
