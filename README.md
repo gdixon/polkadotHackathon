@@ -152,3 +152,14 @@
   - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/10-alice-stash-retrieves-funds.png
   - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/11-bob-returnable-funds.png
   - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/12-bob-retrieves-funds.png
+
+- [[ADVANCED CHALLENGE] REST APIs - Build A Transaction Fee Estimator](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/4/100023930)
+
+  - https://github.com/gdixon/polkadotHackathon/blob/main/substrate-fee-estimate
+  - https://github.com/gdixon/polkadotHackathon/blob/main/substrate-fee-estimate/substrate-node-template
+  - https://github.com/gdixon/polkadotHackathon/blob/main/substrate-fee-estimate/substrate-front-end-template
+  - https://github.com/gdixon/polkadotHackathon/blob/main/substrate-fee-estimate/substrate-front-end-template/src/Interactor.js
+  - https://github.com/gdixon/polkadotHackathon/blob/main/substrate-fee-estimate/1-pallet-interactor-with-fee-estimate.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/substrate-fee-estimate/2-estimate-available.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/substrate-fee-estimate/3-estimate-made.png
+  - https://github.com/gdixon/polkadotHackathon/blob/main/substrate-fee-estimate/4-tx-signed.png
