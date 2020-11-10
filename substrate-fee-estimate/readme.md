@@ -16,7 +16,7 @@ $ cd substrate-node-template
 $ WASM_BUILD_TOOLCHAIN=nightly-2020-10-05 cargo build --release
 ```
 
-### Running the node and the front-end (* note that these commands will need to be ran in seperate terminals)
+### Running the node and the front-end (* note that these commands will need to be ran in separate terminals)
 
 ```
 $ ./target/release/node-template --dev
