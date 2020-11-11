@@ -11,6 +11,7 @@ import BlockNumber from './BlockNumber';
 import Events from './Events';
 import Interactor from './Interactor';
 import Metadata from './Metadata';
+import Multisig from './Multisig';
 import NodeInfo from './NodeInfo';
 import TemplateModule from './TemplateModule';
 import Transfer from './Transfer';
@@ -63,6 +64,10 @@ function Main () {
           </Grid.Row>
           <Grid.Row stretched>
             <Balances />
+          </Grid.Row>
+          <Grid.Row>
+            <Multisig accountPair={accountPair}/>
+            <Events />
           </Grid.Row>
           <Grid.Row>
             <Transfer accountPair={accountPair} />
