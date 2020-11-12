@@ -35,6 +35,8 @@ $ yarn start
 
 ### Evidence of successful deployment and function
 
+#### Live example: https://gdixon.github.io/auction-dapp/
+
 #### Upload contract to local substrate node via [polkadot.js.org/apps/](polkadot.js.org/apps/)
 
 - ![](https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/1-upload-wasm.png?raw=true)
