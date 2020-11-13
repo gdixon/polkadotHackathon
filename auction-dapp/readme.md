@@ -35,7 +35,7 @@ $ yarn start
 
 ### Evidence of successful deployment and function
 
-#### Live example: https://gdixon.github.io/auction-dapp/
+#### Live example: https://gdixon.github.io/auction-dapp/ (first visit https://178.128.45.229 and add an exception for the ssl certificate)
 
 #### Upload contract to local substrate node via [polkadot.js.org/apps/](polkadot.js.org/apps/)
 
