@@ -35,7 +35,7 @@ $ yarn start
 
 ### Evidence of successful deployment and function
 
-#### Live example: https://gdixon.github.io/auction-dapp/ (first visit https://178.128.45.229 and add an exception for the ssl certificate)
+#### <del>Live example: https://gdixon.github.io/auction-dapp/ (first visit https://178.128.45.229 and add an exception for the ssl certificate)</del> - the associated substrate-node instance has been switched off (22/12/2020)
 
 #### Upload contract to local substrate node via [polkadot.js.org/apps/](polkadot.js.org/apps/)
 

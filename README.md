@@ -135,7 +135,7 @@
   - https://github.com/gdixon/kusama-payouts
 
 - [[ADVANCED CHALLENGE] Build A DApp](https://gitcoin.co/issue/Polkadot-Network/hello-world-by-polkadot/2/100023928)
-  - Live example: https://gdixon.github.io/auction-dapp/ (first visit https://178.128.45.229 and add an exception for the ssl certificate)
+  - <del>Live example: https://gdixon.github.io/auction-dapp/ (first visit https://178.128.45.229 and add an exception for the ssl certificate)</del> - the associated substrate-node instance has been switched off (22/12/2020)
   - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp
   - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/substrate-node-template
   - https://github.com/gdixon/polkadotHackathon/blob/main/auction-dapp/substrate-front-end-template
